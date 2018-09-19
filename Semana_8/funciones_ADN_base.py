@@ -24,3 +24,5 @@ no valida.
 # TODO la funcion para validar si todos las bases son validas en la cadena
 
 # TODO funcion es base
+def es_base(caracter):
+    pass
