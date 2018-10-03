@@ -107,11 +107,10 @@ def lista_digitos(numero):
     if numero == 0:
         return [0]
     acumulador = []
-    bandera_neg = numero < 0
     copia = abs(numero)
     while copia > 0:
         acumulador.insert(0, copia % 10)
         copia //= 10
-    if bandera_neg:
+    if numero < 0:
         acumulador[0] *= -1
     return acumulador
