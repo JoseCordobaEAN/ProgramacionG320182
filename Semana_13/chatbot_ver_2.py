@@ -1,10 +1,12 @@
+# importamos json para codificar nuestro diccionario y salvarlo
+import json
+
 # Hacer un diccionario de conocimientos de Esperanza
-conocimiento = {'hola': 'hola, ¿como estas?',
-                'que haces': 'chateando contigo',
-                'cuantos años tienes': 'tengo 10 segundos de ejecución',
-                'quien es usted': 'soy estudiante',
-                'no lo escuché': 'soy estudiante',
-                'una vez mas': 'soy estudiante, soy soy, estudiante soy, yo quiero estudiar, para cambiar la sociedad'}
+# A partir de un archivo
+archivo = open('conocimiento.txt', 'r')
+
+conocimiento = json.load(archivo)
+archivo.close()
 
 despedidas = ['chao', 'suerte', 'hasta luego', 'hasta mañana', 'vemos', 'nos vidrios', 'adios']
 
@@ -21,6 +23,10 @@ while True:
     # Si se despide salimos
     if peticion in despedidas:
         print('Nos pi')
+
+        # Escribimos lo que aprendimos en la base de conocimiento
+        archivo = open('conocimiento.txt', 'w')
+        archivo.write(json.dumps(conocimiento))
         break
 
     # Si se la respuesta respondo
