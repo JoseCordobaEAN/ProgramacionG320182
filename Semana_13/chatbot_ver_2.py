@@ -18,8 +18,6 @@ except FileNotFoundError:
                 'no lo escuché': 'soy estudiante',
                 'una vez mas': 'soy estudiante, soy soy, estudiante soy, yo quiero estudiar, para cambiar la sociedad'}
 
-    print('No se nada')
-
 
 
 despedidas = ['chao', 'suerte', 'hasta luego', 'hasta mañana', 'vemos', 'nos vidrios', 'adios']
