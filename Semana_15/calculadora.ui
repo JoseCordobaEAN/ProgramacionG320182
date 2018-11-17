@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculdora</class>
+ <widget class="QDialog" name="Calculdora">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>451</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QComboBox" name="op">
+        <item>
+         <property name="text">
+          <string>Sumar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Restar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Multiplicar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dividir</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QSplitter" name="splitter">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Numero 1:</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="n1">
+         <property name="minimum">
+          <double>-99.000000000000000</double>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QSplitter" name="splitter_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Operación</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSplitter" name="splitter_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Numero 2:</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="n2">
+         <property name="minimum">
+          <double>-99.989999999999995</double>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QPushButton" name="BotonOperacion">
+      <property name="text">
+       <string>Operar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Resultado:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="res">
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
